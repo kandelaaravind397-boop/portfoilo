@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyle Janson - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .sidebar {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 50px 40px;
+            flex: 0 0 35%;
+            min-height: 100%;
+        }
+
+        .main-content {
+            padding: 50px 40px;
+            flex: 1;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            margin-bottom: 30px;
+            display: block;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .sidebar h1 {
+            font-size: 1.8rem;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .sidebar h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            color: #e0e7ff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .main-content h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #667eea;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1rem;
+            color: white;
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+
+        .main-content h3 {
+            color: #555;
+        }
+
+        ul, ol {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li, ol li {
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+            color: white;
+            font-size: 1rem;
+        }
+
+        ul li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        .main-content ul li, .main-content ol li {
+            color: #555;
+        }
+
+        .profile-header {
+            margin-bottom: 15px;
+        }
+
+        .job-title {
+            font-size: 1.5rem;
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        .section-title {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .section-title h2 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                flex: 1;
+                min-height: auto;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .sidebar h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img class="profile-img" src="image.jpg" alt="Kyle Janson">
+            <h1>KYLE JANSON</h1>
+            
+            <h2>Contact</h2>
+            <h2 style="font-size: 0.9rem; margin-top: 12px; color: white; text-transform: none;">Address</h2>
+            <h3>Hyderabad, India</h3>
+            
+            <h2 style="font-size: 0.9rem; margin-top: 12px; color: white; text-transform: none;">Phone</h2>
+            <h3>+91 9040 6984 0</h3>
+            
+            <h2 style="font-size: 0.9rem; margin-top: 12px; color: white; text-transform: none;">Email</h2>
+            <h3>max@gmail.com</h3>
+            
+            <h2>Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>Frontend Development</li>
+                <li>Backend Development</li>
+            </ul>
+            
+            <h2>Languages</h2>
+            <ul>
+                <li>English</li>
+                <li>French</li>
+                <li>Russian</li>
+            </ul>
+            
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Reading Books</li>
+                <li>Listening to News</li>
+                <li>Playing Cricket</li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="profile-header">
+                <p class="job-title">UX Designer</p>
+            </div>
+
+            <h2>Profile</h2>
+            <p>Life is a beautiful yet unpredictable journey. With a passion for creating intuitive and engaging user experiences, I bring creativity and technical knowledge together to design solutions that make a difference.</p>
+
+            <h2>Work Experience</h2>
+            <p>Experienced UX Designer with a proven track record of creating beautiful and functional interfaces. Life is a beautiful yet unpredictable journey that has taught me the importance of user-centered design.</p>
+
+            <h2>Education</h2>
+            <ol>
+                <li><strong>Master of Science in HCI</strong> (Human-Computer Interaction)</li>
+                <li><strong>Bachelor of Science in UX Design</strong></li>
+            </ol>
+
+            <button>Get in Touch</button>
+        </div>
+    </div>
+</body>
+</html>
